@@ -21,6 +21,7 @@ Todo
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="js/script.js" type="text/javascript"></script>
+	<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 </head>
 <body>
 </body>
@@ -80,11 +81,74 @@ Todo
 		<a class="headerlinks" href="login.html" title="">Login</a>
 	</div>
 	<!-- Star Wars Trailer -->
-	<div class=banner>
-		<h1>Star Wars</h1>
-		<video width="100%" height="auto" autoplay muted loop>
+
+	<div class="banner">
+
+
+	</div>
+
+
+
+
+<div class="banner-image">
+	
+</div>
+
+
+<!-- 			<div class="w3-content w3-display-container">
+				<img class="mySlides" src="img/poster_001.jpg">
+				<img class="mySlides" src="img/poster_002.jpg">
+				<img class="mySlides" src="img/poster_003.jpg">
+				<img class="mySlides" src="img/poster_004.jpg">
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+			</div> -->
+
+
+<!-- 			<div class="w3-content w3-display-container">
+				<img class="mySlides" src="img/poster_001.jpg">
+				<img class="mySlides" src="img/poster_002.jpg">
+				<img class="mySlides" src="img/poster_003.jpg">
+				<div class="w3-center w3-display-bottommiddle" style="width:100%">
+					<div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+					<div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+					<span class="w3-badge demo w3-border" onclick="currentDiv(1)"></span>
+					<span class="w3-badge demo w3-border" onclick="currentDiv(2)"></span>
+					<span class="w3-badge demo w3-border" onclick="currentDiv(3)"></span>
+				</div>
+			</div> -->
+
+
+
+
+<!-- <div class="popup" onclick="myFunction()">Click me!
+  <span class="popuptext" id="myPopup">Popup text...</span>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h1>Star Wars</h1> -->
+<!-- 		<video width="100%" height="auto" autoplay muted loop>
 			<source src="vid/vid.mp4" type="video/mp4"> Your browser does not support the video tag.
-			</video>
+			</video> -->
 			<p>Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget
 				urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper.
 				Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio
@@ -107,53 +171,34 @@ Todo
 			<button class="image-button" type="submit" id="p5">
 				<img class="posters-anim" src="img/poster_005.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
+			<button class="image-button" type="submit" id="p6">
 				<img class="posters-anim" src="img/poster_006.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
+			<button class="image-button" type="submit" id="p7">
 				<img class="posters-anim" src="img/poster_007.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
+			<button class="image-button" type="submit" id="p8">
 				<img class="posters-anim" src="img/poster_008.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
+			<button class="image-button" type="submit" id="p9">
 				<img class="posters-anim" src="img/poster_009.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
+			<button class="image-button" type="submit" id="p10">
 				<img class="posters-anim" src="img/poster_010.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
+			<button class="image-button" type="submit" id="p11">
 				<img class="posters-anim" src="img/poster_011.jpg" alt="">
 			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_007.jpg" alt="">
-			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_008.jpg" alt="">
-			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_009.jpg" alt="">
-			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_010.jpg" alt="">
-			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_011.jpg" alt="">
-			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_007.jpg" alt="">
-			</button>
-			<button class="image-button" type="submit">
-				<img class="posters-anim" src="img/poster_008.jpg" alt="">
-			</button>
+
 		</div>
-		<div class="posters-info" id="posterContainer" style="position: fixed;">
+		<div class="posters-info" id="posterContainer">
 			<div id="moviePoster"></div>
 			<h2 id="movieName">TITLE</h2>
 			<ul>
 				<li><b>Studio: </b><span id="movieStudio"></span></li>
 				<li><b>Released: </b><span id="movieReleased"></span></li>
 				<li><b>Length: </b><span id="movieLength"></span></li>
+				<li><b>Rating: </b><span id="movieRating"></span></li>
 			</ul>
 			<p><span id="movieDescription">Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</span></p>
 			<button class="button">Watch Trailer</button>
@@ -161,7 +206,8 @@ Todo
 
 
 
-<!-- YouTube iFrame START -->
+		</div>
+		<!-- YouTube iFrame START -->
 
 <!-- <iframe id="ytplayer" type="text/html" width="100%" height="auto"
   src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
@@ -181,7 +227,6 @@ Todo
 <!-- YouTube iFrame END -->
 
 
-		</div>
 
 
 
@@ -225,7 +270,7 @@ Todo
 				</p>
 				<span>
 					Times &amp; prices:
-					<select name="Time">
+					<select name="Time" class="list">
 						<option value="a">7:30 - 6,50€</option>
 						<option value="b">10:00 - 7,50€</option>
 						<option value="c">12:30 - 7,50€</option>
@@ -234,7 +279,7 @@ Todo
 						<option value="f">20:15 - 10,50€</option>
 						<option value="g">22:30 - 9,50€</option>
 					</select>
-					<button type="">Book</button>
+					<button class="button">Book</button>
 				</span>
 			</div>
 			<div class="playing-item">

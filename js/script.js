@@ -1,6 +1,44 @@
+
+
+
+
+// var slideIndex = 1;
+// showDivs(slideIndex);
+
+// function plusDivs(n) {
+//   showDivs(slideIndex += n);
+// }
+
+// function currentDiv(n) {
+//   showDivs(slideIndex = n);
+// }
+
+// function showDivs(n) {
+//   var i;
+//   var x = document.getElementsByClassName("mySlides");
+//   var dots = document.getElementsByClassName("demo");
+//   if (n > x.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = x.length}
+//   for (i = 0; i < x.length; i++) {
+//      x[i].style.display = "none";  
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//      dots[i].className = dots[i].className.replace(" w3-white", "");
+//   }
+//   x[slideIndex-1].style.display = "block";  
+//   dots[slideIndex-1].className += " w3-white";
+// }
+
+
+
+
+
+
+
+
 function posterFade(posterImage){
-	$('#moviePoster').fadeOut(250, function(){
-		$(this).html(posterImage).fadeIn(250);
+	$('#moviePoster').fadeOut(300, function(){
+		$(this).html(posterImage).fadeIn(300);
 	})
 }
 function movieName(movie, studio, released, length, rating, desc){
@@ -36,113 +74,27 @@ $(document).ready(function() {
 		posterFade("<img src='img/poster_005.jpg'</img>");
 	});
 	$('#p6').on('click', function() {
-		movieName("NAME","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
-		posterFade("<img src='img/poster_005.jpg'</img>");
+		movieName("All the Money in the World","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
+		posterFade("<img src='img/poster_006.jpg'</img>");
 	});
 	$('#p7').on('click', function() {
-		movieName("NAME","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
-		posterFade("<img src='img/poster_005.jpg'</img>");
+		movieName("Pirates of the Caribbean","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
+		posterFade("<img src='img/poster_007.jpg'</img>");
 	});
 	$('#p8').on('click', function() {
-		movieName("NAME","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
-		posterFade("<img src='img/poster_005.jpg'</img>");
+		movieName("Ethan Hawke","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
+		posterFade("<img src='img/poster_008.jpg'</img>");
 	});
 	$('#p9').on('click', function() {
-		movieName("NAME","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
-		posterFade("<img src='img/poster_005.jpg'</img>");
+		movieName("Star Wars: Rogue One","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
+		posterFade("<img src='img/poster_009.jpg'</img>");
 	});
 	$('#p10').on('click', function() {
-		movieName("NAME","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
-		posterFade("<img src='img/poster_005.jpg'</img>");
+		movieName("Kill Bill","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
+		posterFade("<img src='img/poster_010.jpg'</img>");
 	});
-
-
-
-
-
-
-
-
-
-
-$(".popup").click(function () {
-    var $this = $(this);
-    var $iframe = $("<iframe>").attr("src", $this.data("link")).css({"width": 400, "height": 300});
-    var $title = $("<h1>").text($this.data("title"));
-    $("#video-view").html($title).append($iframe);
-    $iframe.wrap("<div class='class-video'>");
-});
-
-
-
-
-
-// var wrap = $("#wrap");
-
-// wrap.on("scroll", function(e) {
-
-//   if (this.scrollTop > 147) {
-//     wrap.addClass("fix-search");
-//   } else {
-//     wrap.removeClass("fix-search");
-//   }
-
-// });
-
-function sticky_relocate() {
-    var window_top = $(window).scrollTop();
-    var div_top = $('#sticky-anchor').offset().top;
-    if (window_top > div_top) {
-        $('#sticky').addClass('stick');
-        $('#sticky-anchor').height($('#sticky').outerHeight());
-    } else {
-        $('#sticky').removeClass('stick');
-        $('#sticky-anchor').height(0);
-    }
-}
-
-// $(function() {
-//     $(window).scroll(sticky_relocate);
-//     sticky_relocate();
-// });
-
-// var dir = 1;
-// var MIN_TOP = 200;
-// var MAX_TOP = 350;
-
-// function autoscroll() {
-//     var window_top = $(window).scrollTop() + dir;
-//     if (window_top >= MAX_TOP) {
-//         window_top = MAX_TOP;
-//         dir = -1;
-//     } else if (window_top <= MIN_TOP) {
-//         window_top = MIN_TOP;
-//         dir = 1;
-//     }
-//     $(window).scrollTop(window_top);
-//     window.setTimeout(autoscroll, 100);
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	$('#p11').on('click', function() {
+		movieName("Divergent","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
+		posterFade("<img src='img/poster_011.jpg'</img>");
+	});
 });
