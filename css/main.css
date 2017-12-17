@@ -28,6 +28,7 @@ img {
 	". b b b b b b c c ."
 	". d d d d d d d d ."
 	". e e e e e e e e ."
+	". f f f f f f f f ."
 	". ft ft ft ft ft ft ft ft .";
 }
 .title {
@@ -62,6 +63,17 @@ img {
 .banner {
 	grid-area: a;
 }
+.image-button {
+	background: transparent;
+	border: none !important;
+	font-size:0;
+	float: left;
+	cursor: pointer;
+	width: 30%;
+}
+.image-button:focus{
+	outline: none;
+}
 .bannerImage{
 	grid-area: 2 / 1 / auto / span 2;
 	height: 100%;
@@ -84,9 +96,59 @@ img {
 .posters button {
 	max-width: 25%;
 }
+
+
+
+
+
+.bookingPanelLeft{
+	grid-area: 7 / 2 / auto / span 4;
+	/*background: blue;*/
+	display: none;
+}
+
+.bookingPanelRight{
+	grid-area: 7 / 6 / auto / span 4;
+	/*background: red;*/
+	width: 70%;
+	margin-left: 20%;
+	display: none;
+	margin-bottom: 200px;
+}
+
+.bookingPanelRight img{
+	width: 75%;
+	margin-left: 15%;
+}
+
+
+@media only screen and (max-width: 1299px) {
+	.wrapper{
+		margin-left: 2%;
+		margin-right: 2%;
+		grid-template-areas:
+		". hd1 hd1 hd2 hd2 hd2 hd2 hd2 hd2 ."
+		"a a a a a a a a a a"
+		"b b b b b b b c c c"
+		"d d d d d d d d d d"
+		"e e e e e e e e e e"
+		"f f f f f f f f f f"
+		"ft ft ft ft ft ft ft ft ft .";
+	}
+}
+@media only screen and (min-width: 1300px) {
+	.posters button {
+		max-width: 20%
+	}
+}
 @media only screen and (min-width: 1920px) {
 	.posters button {
 		max-width: 15%
+	}
+}
+@media only screen and (min-width: 2500px) {
+	.posters button {
+		max-width: 12%
 	}
 }
 .posters-anim {
@@ -100,9 +162,6 @@ img {
 }
 .posters-info{
 	grid-area: c;
-	/*background: red;*/
-	/*transition: all .2s ease-in-out;*/
-	/*transition: opacity 500ms;*/
 	opacity: 1;
 	margin-top: 30%;
 	margin-left: 10%;
@@ -113,12 +172,15 @@ img {
 }
 .playing {
 	grid-area: e;
+	margin-bottom: 50px;
 }
 .playing-item {
 	float: left;
-	display: block;
+	/*display: block;*/
 	max-width: 13%;
 	margin: 10px;
+	/*width: 20%;*/
+	height: 550px;
 }
 .footer {
 	grid-area: ft;
@@ -126,26 +188,40 @@ img {
 .dropdown {
 	float: left;
 	overflow: hidden;
-	/*transition: all .2s ease-in-out;*/
+	transition: all .2s ease-in-out;
+
 }
 .dropdown-content {
+	transition 0s background-color;
 	visibility: hidden;
 	position: absolute;
 	left: 0;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	/*z-index: 0;*/
-	height: 250px;
-	width: 100%;
+	height: auto;
+	width: auto;
 	background: black;
 	opacity: 1;
 	margin-top: 28px;
 	background: black;
 	z-index: 2;
+	transition: all .15s ease-in-out;
+	height: 250px;
+	width: 100%;
 }
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0;}
+}
+
 .dropdown:focus .dropdown-content,
 .dropdown:focus-within .dropdown-content,
 .dropdown:hover .dropdown-content {
-	margin-top: 28px;
+	margin-top: -5px;
 	transition: all .2s ease-in-out;
 	display: block;
 	opacity: 1;
@@ -153,7 +229,20 @@ img {
 	height: 250px;
 	width: 100%;
 	visibility: visible;
+	animation: fadeIn;
+	animation-duration: 0.5s;
+	padding-bottom: 50px;
+	padding-top: 50px;
+
 }
+
+.dropdown-content:not(:hover){
+	/*transition-delay: 0.5s;*/
+		animation: fadeOut;
+	animation-duration: 0.5s;
+
+}
+
 .column {
 	float: left;
 	width: 20%;
@@ -186,12 +275,12 @@ img {
 .columnImg:hover {
 	/*background-size: cover;*/
 	z-index: 2;
-	transition: all .2s ease-in-out;
+	/*transition: all .2s ease-in-out;*/
 	opacity: 1;
 }
 .columnImg:not(:hover) {
 	background: black;
-	transition: all .1s ease-in-out;
+	/*transition: all .1s ease-in-out;*/
 	opacity: 0.8;
 }
 #city1 {
@@ -304,9 +393,10 @@ label {
 }
 /* Booking system */
 #bookingOverlay {
+	grid-area: f;
 	opacity: 1;
 	color: white;
-	z-index: 100; 
+	z-index: 100;
 	cursor: pointer;
 	transition: all .1s ease-in-out;
 	border: 1px solid #FFFFFF;
@@ -318,10 +408,13 @@ label {
 	float: left;
 	transition: all .2s ease-in-out;
 	font-size: 11pt;
-	display: none;
-	width: 600px;
-	height: 100%;
+	/*display: none;*/
+	/*width: 600px;*/
+	/*height: 100%;*/
 }
+
+
+
 #bookingWrapper {
 	grid-area: x;
 	margin: auto auto;
@@ -342,7 +435,7 @@ label {
 	text-align: center;
 	font-size: 1em;
 	line-height: 1em;
-	background-color: #22c0ce; 
+	background-color: #22c0ce;
 	display: none;
 }
 }
@@ -368,8 +461,8 @@ label {
 	cursor: pointer;
 	background-color:#ddd;
 }
-.available:hover { 
-	background-color: #22c0ce; 
+.available:hover {
+	background-color: #22c0ce;
 }
 .available:active {
 	background-color: #000;
@@ -417,7 +510,6 @@ label {
 	width: 100%;
 	text-align: center;
 	background: black;
-	/*opacity: 0.8;*/
 }
 .theaters-banner h1 {
 	position: relative;
@@ -447,16 +539,4 @@ label {
 	grid-area: e;
 	background: url(../img/places/roi-1.jpg) 0 0 no-repeat;
 	background-size: cover;
-}
-/* Expanding movie menu */
-.image-button {
-	background: transparent;
-	border: none !important;
-	font-size:0;
-	float: left;
-	cursor: pointer;
-	width: 30%;
-}
-.image-button:focus{
-	outline: none;
 }
