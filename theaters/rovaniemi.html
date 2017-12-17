@@ -4,64 +4,66 @@ Joona Keskitalo DIN16SP
 -->
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NorthKino - Rovaniemi</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/script_pages.js" type="text/javascript"></script>
 </head>
-
 <body>
 </body>
-<div class="wrapper">
+<div class="wrapper theater-wrapper">
     <div class="title">
-        <h1>NorthKino</h1>
+        <a href="../index.html">
+            <h1>NorthKino</h1>
+        </a>
     </div>
     <div class="header">
         <a class="headerlinks" href="../index.html" title="">Home</a>
         <div class="dropdown">
-            <a class="dropbtn headerlinks" href="../theaters.html">Theaters</a>
+            <a class="dropbtn headerlinks" href="#">Theaters</a>
             <div class="dropdown-content">
                 <div class="column">
                     <div class="columnImg" id="city1">
                         <h3> <a href="helsinki.html" title="">Helsinki</a></h3>
-                        <a href="#">Movies</a>
-                        <a href="#">Rooms</a>
-                        <a href="#">Now Playing</a>
+                        <a href="helsinki.html#movies">Movies</a>
+                        <a href="helsinki.html#rooms">Rooms</a>
+                        <a href="helsinki.html#nowPlaying">Now Playing</a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="columnImg" id="city2">
                         <h3> <a href="turku.html" title="">Turku</a></h3>
-                        <a href="#">Movies</a>
-                        <a href="#">Rooms</a>
-                        <a href="#">Now Playing</a>
+                        <a href="turku.html#movies">Movies</a>
+                        <a href="turku.html#rooms">Rooms</a>
+                        <a href="turku.html#nowPlaying">Now Playing</a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="columnImg" id="city3">
                         <h3> <a href="tampere.html" title="">Tampere</a></h3>
-                        <a href="#">Movies</a>
-                        <a href="#">Rooms</a>
-                        <a href="#">Now Playing</a>
+                        <a href="tampere.html#movies">Movies</a>
+                        <a href="tampere.html#rooms">Rooms</a>
+                        <a href="tampere.html#nowPlaying">Now Playing</a>
                     </div>
                 </div>
                 <div class="column">
                     <div class="columnImg" id="city4">
                         <h3> <a href="Oulu.html" title="">Oulu</a></h3>
-                        <a href="#">Movies</a>
-                        <a href="#">Rooms</a>
-                        <a href="#">Now Playing</a>
+                        <a href="Oulu.html.html#movies">Movies</a>
+                        <a href="Oulu.html#rooms">Rooms</a>
+                        <a href="Oulu.html#nowPlaying">Now Playing</a>
                     </div>
                 </div>
                 <div class="column">
-                    <div class="columnImg" id="city1">
+                    <div class="columnImg" id="city5">
                         <h3> <a href="rovaniemi.html" title="">Rovaniemi</a></h3>
-                        <a href="#">Movies</a>
-                        <a href="#">Rooms</a>
-                        <a href="#">Now Playing</a>
+                        <a href="rovaniemi.html#movies">Movies</a>
+                        <a href="rovaniemi.html#rooms">Rooms</a>
+                        <a href="rovaniemi.html#nowPlaying">Now Playing</a>
                     </div>
                 </div>
             </div>
@@ -70,6 +72,305 @@ Joona Keskitalo DIN16SP
         <a class="headerlinks" href="../contact.html" title="">Contact</a>
         <a class="headerlinks" href="../login.html" title="">Login</a>
     </div>
+    <div class="banner">
+        <h1>Rovaniemi</h1>
+        <img src="../img/places/roi-1.jpg" alt="">
+    </div>
+    <div class="posters">
+        <h1>Movies</h1>
+        <button class="image-button" type="submit" id="p1">
+            <img class="posters-anim" src="../img/poster_001.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p2">
+            <img class="posters-anim" src="../img/poster_002.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p3">
+            <img class="posters-anim" src="../img/poster_003.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p4">
+            <img class="posters-anim" src="../img/poster_004.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p5">
+            <img class="posters-anim" src="../img/poster_005.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p6">
+            <img class="posters-anim" src="../img/poster_006.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p7">
+            <img class="posters-anim" src="../img/poster_007.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p8">
+            <img class="posters-anim" src="../img/poster_008.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p9">
+            <img class="posters-anim" src="../img/poster_009.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p10">
+            <img class="posters-anim" src="../img/poster_010.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p11">
+            <img class="posters-anim" src="../img/poster_011.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p12">
+            <img class="posters-anim" src="../img/poster_012.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p13">
+            <img class="posters-anim" src="../img/poster_013.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p14">
+            <img class="posters-anim" src="../img/poster_014.jpg" alt="">
+        </button>
+        <button class="image-button" type="submit" id="p15">
+            <img class="posters-anim" src="../img/poster_015.jpg" alt="">
+        </button>
+    </div>
+    <div>
+        <a name="movies"></a>
+    </div>
+    <div class="posters-info" id="posterContainer">
+        <div class="moviePoster"><img src="../img/poster_001.jpg" /></div>
+        <h2 class="movieName">TITLE</h2>
+        <ul>
+            <li><b>Studio: </b><span class="movieStudio">20th Century Fox</span></li>
+            <li><b>Released: </b><span class="movieReleased">1979</span></li>
+            <li><b>Length: </b><span class="movieLength">1h 57min</span></li>
+            <li><b>Rating: </b><span class="movieRating">8.5</span></li>
+        </ul>
+        <p><span class="movieDescription">Alien is a 1979 science-fiction horror film directed by Ridley Scott, and starring Sigourney Weaver, Tom Skerritt, Veronica Cartwright, Harry Dean Stanton, John Hurt, Ian Holm and Yaphet Kotto.</span></p>
+        <a href="https://www.youtube.com/watch?v=LjLamj-b0I8" class="button">Watch Trailer</a>
+        <a href="#bookingLink" class="button button-buy" onclick="showOverlay()">Buy Tickets</a>
+    </div>
+    <div>
+        <a name="rooms"></a>
+    </div>
+    <div class="room1">
+        <h2>Room 1</h2>
+        <img src="../img/r1.jpg" alt="">
+        <h4>Smallest room</h4>
+    </div>
+    <div class="room2">
+        <h2>Room 2</h2>
+        <img src="../img/r2.jpg" alt="">
+        <h4>Midsize Room</h4>
+    </div>
+    <div class="room3">
+        <h2>Room 3</h2>
+        <img src="../img/r3.jpg" alt="">
+        <h4>Largest Room</h4>
+    </div>
+    <div class="playing">
+        <h1>Now Playing</h1>
+        <h2>Helsinki</h2>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_001.jpg" alt="">
+            <h2>Aliens</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button class="book-button">Book</button>
+                <div class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_002.jpg" alt="">
+            <h2>Aftermath</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button class="book-button">Book</button>
+                <div class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_003.jpg" alt="">
+            <h2>Baby Driver</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button class="book-button">Book</button>
+                <div class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_004.jpg" alt="">
+            <h2>Guardians of The Galaxy Vol. 2</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+            <div class="book-dropdown">
+                <button class="book-button">Book</button>
+                <div class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_005.jpg" alt="">
+            <h2>Moonlight</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button class="book-button">Book</button>
+                <div class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_006.jpg" alt="">
+            <h2>All the Money in the World</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button  class="book-button">Book</button>
+                <div onclick="showOverlay()" class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_007.jpg" alt="">
+            <h2>All the Money in the World</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button  class="book-button">Book</button>
+                <div onclick="showOverlay()" class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_008.jpg" alt="">
+            <h2>All the Money in the World</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button  class="book-button">Book</button>
+                <div onclick="showOverlay()" class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_009.jpg" alt="">
+            <h2>All the Money in the World</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button  class="book-button">Book</button>
+                <div onclick="showOverlay()" class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_010.jpg" alt="">
+            <h2>All the Money in the World</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button  class="book-button">Book</button>
+                <div onclick="showOverlay()" class="book-dropdown-content">
+                    <a onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+        <div class="playing-item">
+            <img class="posters-anim" src="../img/poster_011.jpg" alt="">
+            <h2>All the Money in the World</h2>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur
+            </p>
+            <div class="book-dropdown">
+                <button  class="book-button">Book</button>
+                <div onclick="showOverlay()" class="book-dropdown-content">
+                    <a href="#bookingLink" onclick="showOverlay()">12:30 - 7,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">16:30 - 8,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">18:30 - 9,50€</a>
+                    <a href="#bookingLink" onclick="showOverlay()">22:30 - 9,50€</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bookingPanelLeft">
+        <div id="bookingOverlay">
+            <h2>Select your seat:</h2>
+            <div class="bookingDialog">
+                <div id="key">
+                    <div class="active"></div> = Available
+                    <div class="inactive"></div> = Unavailable
+                </div>
+                <div id="bookingWrapper"></div>
+                <div id="form" style="display: none;">
+                    <h2>Seat Reservation Form</h2>
+                    <p id="picked_seat"></p>
+                    Name: <input type="text" id="form_name"><br>
+                    Email: <input type="" id="form_email"><br>
+                    <input type="hidden" id="current_seat" value="" />
+                    <button class="formButton"  id="formButton">Reserve</button>
+                    <button class="formButton" onclick="hideOverlay()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bookingPanelRight">
+        <div class="moviePoster"><img src="../img/poster_001.jpg" /></div>
+        <h2 class="movieName">TITLE</h2>
+        <ul>
+            <li><b>Studio: </b><span class="movieStudio">20th Century Fox</span></li>
+            <li><b>Released: </b><span class="movieReleased">1979</span></li>
+            <li><b>Length: </b><span class="movieLength">1h 57min</span></li>
+            <li><b>Rating: </b><span class="movieRating">8.5</span></li>
+        </ul>
+        <p><span class="movieDescription">Alien is a 1979 science-fiction horror film directed by Ridley Scott, and starring Sigourney Weaver, Tom Skerritt, Veronica Cartwright, Harry Dean Stanton, John Hurt, Ian Holm and Yaphet Kotto.</span></p>
+    </div>
+    <div>
+        <a name="bookingLink"></a>
+    </div>
 </div>
-
 </html>
