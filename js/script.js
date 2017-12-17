@@ -97,4 +97,31 @@ $(document).ready(function() {
 		movieName("Divergent","STUDIO","releaseYEAR", "LENGTH", "RATING", "DESC");
 		posterFade("<img src='img/poster_011.jpg'</img>");
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+	$('#sw-trailer-btn').on('click', function() {
+		document.getElementById("bannerImageID").style.display = "none";
+		document.getElementById("videoPlay").innerHTML = "<video id='sw-trailer'  width='100%' height='auto' autoplay controls> <source src='vid/vid.mp4' type='video/mp4'> Your browser does not support the video tag. </video>";
+		var video = document.getElementById('sw-trailer');
+		video.volume = 0.5;
+	});
+
+
+
+
+
+
+
+
 });
