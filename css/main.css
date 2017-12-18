@@ -68,7 +68,18 @@ img {
 	text-decoration: none;
 	font-weight: 600;
 }
-
+.search{
+    padding: 6px;
+    background: #FAFAFA;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.12), 0 2px 2px 0 rgba(0,0,0,0.24);
+    border-radius: 8px;
+    width: auto;
+    /*color: black;*/
+    margin-left: 60px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
 .banner {
 	grid-area: a;
 }
@@ -107,12 +118,10 @@ img {
 }
 .bookingPanelLeft{
 	grid-area: 7 / 2 / auto / span 4;
-	/*background: blue;*/
 	display: none;
 }
 .bookingPanelRight{
 	grid-area: 7 / 6 / auto / span 4;
-	/*background: red;*/
 	width: 70%;
 	margin-left: 20%;
 	display: none;
@@ -182,10 +191,8 @@ img {
 }
 .playing-item {
 	float: left;
-	/*display: block;*/
 	max-width: 13%;
 	margin: 10px;
-	/*width: 20%;*/
 	height: 550px;
 }
 .footer {
@@ -468,53 +475,4 @@ label {
 	cursor: pointer;
 	transition: all .2s ease-in-out;
 	font-size: 11pt;
-}
-/* REDO grid area*/
-.theaters-wrapper {
-	transition: all .2s ease-in-out;
-	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-auto-rows: minmax(100px, auto);
-	grid-gap: 10px;
-	grid-template-areas:
-	". hd1 hd1 hd2 hd2 hd2 hd2 hd2 hd2 ."
-	 "a a a a a b b b b b"
-	 "a a a a a b b b b b"
-	 "c c c d d d d e e e"
-	 "c c c d d d d e e e";
-}
-.theaters-banner {
-	height: 400px;
-	width: 100%;
-	text-align: center;
-	background: black;
-}
-.theaters-banner h1 {
-	position: relative;
-	top: 45%;
-}
-#theaters-1 {
-	grid-area: a;
-	background: url(../img/places/helsinki-1.jpg) no-repeat;
-	background-size: cover;
-}
-#theaters-2 {
-	grid-area: b;
-	background: url(../img/places/turku-1.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-#theaters-3 {
-	grid-area: c;
-	background: url(../img/places/tampere-1.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-#theaters-4 {
-	grid-area: d;
-	background: url(../img/places/oulu-1.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-#theaters-5 {
-	grid-area: e;
-	background: url(../img/places/roi-1.jpg) 0 0 no-repeat;
-	background-size: cover;
 }
