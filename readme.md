@@ -49,5 +49,5 @@ The `grid-template-areas` defines the layout and it can be redefined for breakpo
 ***
 
 
-The page can be previewed [here](https://joona-keskitalo.github.io/oamk-animation/).
+The page can be previewed [here](https://joonakeskitalo.github.io/oamk-animation/).
 
